@@ -27,5 +27,13 @@ Following a structured **Cybersecurity Recluitment** approach, this lab followed
 ## 🚀 How it Works
 The script executes system commands to query the OS state, compares them against "Hardened" security standards, and flags any discrepancies as a **Security Gap**.
 
+
+## 📈 Service Roadmap & Commercial Vision
+This tool is the foundation for a specialized cybersecurity service suite tailored for Small and Medium Enterprises (SMEs) and VIP Digital Hygiene.
+
+*   **Phase 1 (Current):** Automated Hardening & Compliance Auditing for Linux Infrastructure.
+*   **Phase 2 (Q3 2026):** Executive Digital Hygiene Audits (MFA, OSINT Leak Detection).
+*   **Phase 3 (Q4 2026):** Digital Evidence Preservation & First Responder Consulting, leveraging Criminology expertise.
+
 ---
 *This repository is part of a specialized portfolio in IT Operations and Cybersecurity, demonstrating the ability to build custom security tooling.*
