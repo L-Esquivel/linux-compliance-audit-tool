@@ -1,39 +1,40 @@
-# Linux Compliance Audit Tool (Python) 🛡️
+# Linux Compliance Audit Tool
 
-## 🎯 Project Overview
-This project is a technical laboratory focused on **Detection and Analysis** for IT Operations. It features a Python-based automation script designed to audit a Linux environment against industry-standard **CIS Benchmarks**.
+**Automated Cybersecurity Compliance Auditor for Linux Systems using Python**
 
-The goal is to transition from manual security checks to a scalable, automated auditing process that identifies misconfigurations before they can be exploited.
+Professional tool that audits Linux servers against **CIS Benchmarks**, detects security misconfigurations, and generates detailed compliance reports.
 
-## 🛠️ Tech Stack & Environment
-*   **Language:** Python 3.x (utilizing `os` and `subprocess` libraries).
-*   **Operating System:** Linux (Audited on a Beelink SER5 MAX 6800H).
-*   **Framework:** Inspired by CIS (Center for Internet Security) Benchmarks.
+### 🎯 Objective
+Automate security auditing and compliance checking on Linux infrastructure to quickly identify vulnerabilities and hardening opportunities, supporting Defensive Security and IT Operations teams.
 
-## 🔍 Audit Scope (The Lab Exercise)
-The tool focuses on five critical security controls:
-1.  **SSH Configuration**: Disabling root login to prevent brute-force entry.
-2.  **Filesystem Integrity**: Verifying critical permissions for `/etc/shadow` and `/etc/passwd`.
-3.  **Service Hardening**: Identifying unnecessary active services that increase the attack surface.
-4.  **Password Policy**: Auditing hashing algorithms and expiration settings.
-5.  **User Privileges**: Detecting unauthorized accounts with UID 0 (Root privileges).
+### ✨ Key Features
+- Automated evaluation of selected CIS Benchmark controls (Level 1)
+- Checks file permissions, ownership, and critical system settings
+- Service, port, and user account security validation
+- Password policy and authentication auditing
+- Professional HTML and TXT report generation
+- Modular design for easy customization and extension
 
-## 📋 The Iterative Process
-Following a structured **Cybersecurity Recluitment** approach, this lab followed these stages:
-1.  **Benchmarking**: Selecting high-impact controls based on industry standards.
-2.  **Scripting**: Developing a Python tool to automate the "Detection" phase.
-3.  **Analysis**: Transforming raw script output into a professional **Audit Report**.
+### 🛠️ Technologies
+- Python 3.10+
+- Bash scripting integration
+- Linux command-line tools
+- HTML report generation
 
-## 🚀 How it Works
-The script executes system commands to query the OS state, compares them against "Hardened" security standards, and flags any discrepancies as a **Security Gap**.
+### 🚀 How to Use
 
+```bash
+# Clone the repository
+git clone https://github.com/L-Esquivel/linux-compliance-audit-tool.git
+cd linux-compliance-audit-tool
 
-## 📈 Service Roadmap & Commercial Vision
-This tool is the foundation for a specialized cybersecurity service suite tailored for Small and Medium Enterprises (SMEs) and VIP Digital Hygiene.
+# Run full audit
+python3 main.py
 
-*   **Phase 1 (Current):** Automated Hardening & Compliance Auditing for Linux Infrastructure.
-*   **Phase 2 (Q3 2026):** Executive Digital Hygiene Audits (MFA, OSINT Leak Detection).
-*   **Phase 3 (Q4 2026):** Digital Evidence Preservation & First Responder Consulting, leveraging Criminology expertise.
+# Generate HTML report
+python3 main.py --report html
 
+# Run with specific options
+python3 main.py --help
 ---
 *This repository is part of a specialized portfolio in IT Operations and Cybersecurity, demonstrating the ability to build custom security tooling.*
